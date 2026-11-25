@@ -1,8 +1,8 @@
-// Creates the Acme organization in Neon Auth with three users:
+// Creates the Acme organization in Managed Better Auth with three users:
 // Dana Smith (owner), Zhang Kai (admin), and Alex Lopez (member).
 const baseUrl = process.env.NEON_AUTH_BASE_URL!;
 const password = 'AbC123dEf';
-// Neon Auth only accepts requests from trusted origins. localhost is
+// Managed Better Auth only accepts requests from trusted origins. localhost is
 // trusted while Allow localhost is on.
 const trustedOrigin = 'http://localhost:4111';
 

@@ -7,7 +7,7 @@ import { expenseApproval } from './workflows/expense-approval';
 export const mastra = new Mastra({
   agents: { expenseAgent },
   workflows: { expenseApproval },
-  // Workflow snapshots live in Neon, so a request waiting for
+  // Workflow snapshots are stored in Neon, so a request waiting for
   // approval survives restarts and deploys.
   storage: new PostgresStore({
     id: 'neon-storage',
